@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Lorem Infini</title>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN4VK5B24Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8">
+    <title>Lorem Infini</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 80px 20px 20px;
+        background: #121212;
+        color: #e0e0e0;
+      }
 
-    gtag('config', 'G-DN4VK5B24Y');
-  </script>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 80px 20px 20px;
-      background: #121212;
-      color: #e0e0e0;
-    }
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+      #counter {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 7px 18px;
+        background: #1e1e1e;
+        border-radius: 20px;
+        font-size: 15px;
+        color: #bbbbbb;
+        z-index: 999;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+        max-width: 90vw;
+        text-align: center;
+        word-break: break-word;
+      }
 
-    #counter {
-      position: fixed;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 5px 15px;
-      background: #1e1e1e;
-      border-radius: 20px;
-      font-size: 14px;
-      color: #bbbbbb;
-      z-index: 999;
-      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-    }
+      @media (max-width: 600px) {
+        #counter {
+          top: 8px;
+          left: 50%;
+          padding: 6px 8vw;
+          font-size: 13px;
+          max-width: 96vw;
+        }
+      }
 
-    #infinite {
-      background: #1e1e1e;
-      padding: 20px;
-      border-radius: 8px;
-      line-height: 1.8;
-      transition: all 0.3s ease-in-out;
-    }
+      #infinite {
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 8px;
+        line-height: 1.8;
+        transition: all 0.3s ease-in-out;
+      }
 
-    .fade-in {
-      animation: fadeIn 0.5s ease-in-out;
-    }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-  </style>
-  <script>
-    window.axeptioSettings = {
-      clientId: "68872fbffe06d340da1685eb",
-      cookiesVersion: "lorem-infini-fr-EU",
-    };
-    (function(d, s) {
-      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-      e.async = true; e.src = "//static.axept.io/sdk.js";
-      t.parentNode.insertBefore(e, t);
-    })(document, "script");
-  </script>
-</head>
-<body>
-  <div id="counter">0 mots</div>
-  <p id="infinite"></p>
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="counter">0 mots</div>
+    <p id="infinite"></p>
     <script defer src="https://umami.dcdv.org/script.js" data-website-id="0135fa0a-54b2-454a-a964-729cffa558a5"></script>
-  <script src="/script.js"></script>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
